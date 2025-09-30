@@ -1,0 +1,148 @@
+/**
+ * EventFlux Documentation - Custom Styles
+ * Following EventFlux Brand Reference color palette
+ */
+
+/* EventFlux Color Palette - Light Theme */
+:root {
+  /* Primary Colors - Dark Blue for headings and navigation */
+  --ifm-color-primary: #00bcd4;
+  --ifm-color-primary-dark: #00a8bd;
+  --ifm-color-primary-darker: #009fb2;
+  --ifm-color-primary-darkest: #008393;
+  --ifm-color-primary-light: #00d0eb;
+  --ifm-color-primary-lighter: #00d9f5;
+  --ifm-color-primary-lightest: #1ae4ff;
+
+  /* Backgrounds - Light neutral backgrounds */
+  --ifm-background-color: #f7f8f8;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-card-background-color: #ffffff;
+
+  /* Text Colors */
+  --ifm-font-color-base: #424242;
+  --ifm-heading-color: #2a3e5d;
+
+  /* Borders and Dividers */
+  --ifm-color-emphasis-100: #eeeeee;
+  --ifm-color-emphasis-200: #eeeeee;
+  --ifm-color-emphasis-300: #eeeeee;
+  --ifm-hr-background-color: #eeeeee;
+  --ifm-table-border-color: #eeeeee;
+
+  /* Code */
+  --ifm-code-font-size: 95%;
+  --ifm-code-background: #eeeeee;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 188, 212, 0.1);
+
+  /* Navbar - Clean white background */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-link-color: #2a3e5d;
+  --ifm-navbar-link-hover-color: #00bcd4;
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+  /* Sidebar */
+  --ifm-menu-color: #424242;
+  --ifm-menu-color-active: #00bcd4;
+  --ifm-menu-color-background-active: rgba(0, 188, 212, 0.1);
+
+  /* Footer */
+  --ifm-footer-background-color: #f7f8f8;
+  --ifm-footer-color: #424242;
+  --ifm-footer-link-color: #2a3e5d;
+  --ifm-footer-link-hover-color: #00bcd4;
+
+  /* Disable dark mode */
+  --docusaurus-collapse-button-bg: transparent;
+}
+
+/* Force light mode only */
+[data-theme="dark"] {
+  /* Keep same light theme colors even if dark mode is somehow triggered */
+  --ifm-color-primary: #00bcd4;
+  --ifm-background-color: #f7f8f8;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-font-color-base: #424242;
+  --ifm-heading-color: #2a3e5d;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-footer-background-color: #f7f8f8;
+}
+
+/* Logo styling */
+.navbar__logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Headings use Primary Blue (Dark) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2a3e5d;
+}
+
+/* Links use Accent Teal */
+a {
+  color: #00bcd4;
+}
+
+a:hover {
+  color: #673ab7;
+}
+
+/* Button styles */
+.button--primary {
+  background-color: #00bcd4;
+  border-color: #00bcd4;
+  color: white;
+}
+
+.button--primary:hover {
+  background-color: #00a8bd;
+  border-color: #00a8bd;
+}
+
+.button--secondary {
+  background-color: #673ab7;
+  border-color: #673ab7;
+  color: white;
+}
+
+.button--secondary:hover {
+  background-color: #5e35a6;
+  border-color: #5e35a6;
+}
+
+/* Sidebar styling */
+.menu__link--active {
+  color: #00bcd4;
+  background-color: rgba(0, 188, 212, 0.1);
+}
+
+/* Table of contents */
+.table-of-contents__link--active {
+  color: #00bcd4;
+}
+
+.table-of-contents__link:hover {
+  color: #00bcd4;
+}
+
+/* Clean, light documentation cards */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+/* Admonitions with light backgrounds */
+.admonition {
+  background-color: #ffffff;
+  border-left: 3px solid #00bcd4;
+}
+
+.admonition-heading h5 {
+  color: #2a3e5d;
+}
